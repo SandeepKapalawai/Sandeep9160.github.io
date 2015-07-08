@@ -32,7 +32,7 @@
     <script src="assets/js/jquery.min.js"></script>
 
     <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -53,7 +53,7 @@
     </script>
    </div>
 
-   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div id="navigationbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -968,7 +968,7 @@
         </li>
 
         <li class="timeline-inverted">
-          <div class="timeline-badge warning"><i class="fa fa-laptop"></i></div>
+          <div class="timeline-badge warning"><i class="fa fa-users"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title">User Experience Designer<img src="images/Clot.png" title="Bhavishya Garg" alt="Bhavishya Garg" align="right"></h4>
@@ -982,7 +982,7 @@
         </li>
 
         <li>
-          <div class="timeline-badge danger"><i class="fa fa-desktop"></i></div>
+          <div class="timeline-badge danger"><i class="fa fa-pencil"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title">UI Developer<img src="images/Dz.png" title="Bhavishya Garg" alt="Bhavishya Garg" align="right"></h4>
@@ -1019,6 +1019,20 @@
             </div>
             <div class="timeline-body">
               <p> Website/Application development, UX/UI design, Graphic Creation or any IT related task the company needs to be done. Lead Designer for whole website and mobile app.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-inverted">
+          <div class="timeline-badge danger"><i class="fa fa-rocket"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Lead UI/UX Designer<img src="images/geospot.png" title="Bhavishya Garg" alt="Bhavishya Garg" align="right"></h4>
+              <p>Geospot</p>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> June 2015</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Designing complete UI for the Geospot App. Working with Android Developers to implement it in best possible way.</p>
             </div>
           </div>
         </li>
@@ -1118,7 +1132,16 @@
 
 
 
-
+    <script>
+      $(window).scroll(function() {
+      if ($(this).scrollTop() > 100){  
+          $('#navigationbar').addClass("makeitwhite");
+        }
+        else{
+          $('#navigationbar').removeClass("makeitwhite");
+        }
+      });
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

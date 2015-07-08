@@ -125,3 +125,12 @@ text-align:center}
 .contct h1{
 	padding-top:60px
 	}
+
+	
+#navigationbar.makeitwhite{
+	background-color: white;
+	background-color: #fff;
+	padding-top: 10px;
+	-webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
