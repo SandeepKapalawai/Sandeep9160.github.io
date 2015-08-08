@@ -4,6 +4,10 @@ body{padding-top:50px;
 	color:#727272;
 
 }
+::selection {
+	color:#fff;
+    background: #03C9A9;
+}
 
 .jumbotron{text-align:center;
 	padding-top:70px;
